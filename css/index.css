@@ -97,14 +97,12 @@ a{
 .header__navbar{
     background-color: #095aaa;
     color: #e6e6e6;
-    
 }
 .main__navbar-menu a{
     padding: 10px 0px;
     color: #e6e6e6;
     display: inline-block;
-    padding: 10px 8px;
-    margin-right: 10px;
+    padding: 10px 12px;
 }
 .main__navbar-menu a:hover{
     color: white;
@@ -212,6 +210,49 @@ a{
     padding-top: 18px;
     width: 300px;
     margin-left: 30px;
+}
+.main__aside-stonks{
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    font: 500 15px/19px Roboto;
+    padding: 15px 15px 0px 15px;
+}
+.main__col1-title{
+    font: 500 16px/22px Roboto;
+}
+.main__col1-currency{
+    font: 500 14px/19px Roboto;
+    color: #9699a1;
+}
+.main__stonks-li:not(:last-child){
+    border-bottom: 1px solid #e6e6e6;
+}
+.main__stonks a{
+    padding: 8px 0px;
+    color: #9699a1;
+}
+.active{
+    border-bottom: 3px solid #147ade;
+    color: #147ade !important;
+}
+.stonks__col-1, .stonks__col-2, .stonks__col-3{
+    width: 31%;
+    padding: 12px 0px;
+}
+.stonks__col-2{
+    align-self: center;
+    display: table;
+}
+.stonks__col-2 > span{
+    display: table-cell;
+    text-align: center;
+}
+.stonks__col-3{
+    text-align: right;
+    align-self: center;
+}
+.color-red{
+    color: #f35a57;
 }
 .main__col-3{
     border-bottom: 3px solid #147ade;
@@ -447,8 +488,8 @@ hr{
 .main__aside-right-empty{
     background-color: #e6e6e6;
     margin-top: 30px;
-    height: auto;
     width: 300px;
+    height: max-content;
 }
 .main__ar-empty-bottom{
     background-color: #e6e6e6;
