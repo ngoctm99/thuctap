@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/business.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
     <title>Doanh Nghiệp</title>
 </head>
+
 <body>
     <!-- header -->
     <div class="header">
@@ -27,11 +32,12 @@
         </div>
         <div class="header__navbar">
             <div class="container">
+                <!-- before -->
                 <div class="header__navbar-flex d-flex justify-content-between align-item-center">
                     <div class="main__navbar-menu d-flex text-uppercase">
                         <ul class="d-flex">
                             <li>
-                                <a href="#" class="main__navlink--active" title="Trang chủ">
+                                <a href="index.html" title="Trang chủ">
                                     <span class="main__navbar--icon">
                                         <img src="../image/home.png" alt="home">
                                     </span>
@@ -39,7 +45,8 @@
                                 </a>
                             </li>
                             <li><a href="#" title="Sự kiện">Sự kiện</a></li>
-                            <li><a href="#" title="Doanh nghiệp">Doanh nghiệp</a></li>
+                            <li><a href="business.html" class="main__navlink--active" title="Doanh nghiệp">Doanh
+                                    nghiệp</a></li>
                             <li><a href="#" title="Tiếp thị">Tiếp thị</a></li>
                             <li><a href="#" title="Kinh tế">Kinh tế</a></li>
                             <li><a href="#" title="Xã hội">Xã hội</a></li>
@@ -48,11 +55,116 @@
                             <li><a href="#" title="Video">Video</a></li>
                         </ul>
                         <div class="header__navbar-search">
-                            <a href=""><img src="../image/search.png" alt="search" title="Tìm kiếm"></a>
+                            <a href="#"><img src="../image/search.png" alt="search" title="Tìm kiếm"></a>
                         </div>
                     </div>
                     <div class="header__navbar-toggler">
-                        <img src="../image/toggler.png" alt="toggler" title="Danh mục">
+                        <a href="#" title="Danh mục">
+                            <img src="../image/toggler.png" class="menu-toggler" alt="toggler">
+                            <img src="../image/x.png" class="menu-close" alt="close">
+                        </a>
+                    </div>
+                </div>
+                <!-- after -->
+                <div id="menu__dropdown">
+                    <div class="header__menu-dropdown">
+                        <ul class="header__menu-category d-flex justify-content-between">
+                            <li class="header__menu-list">
+                                <a href="#" class="text-uppercase dropdown-category" title="Sự kiện">Sự kiện</a>
+                                <ul class="header__menu-list-title">
+                                    <li><a href="#" title="Chính trị - Xã hội">Chính trị - Xã hội</a></li>
+                                    <li><a href="#" title="Cải cách hành chính">Cải cách hành chính</a></li>
+                                    <li><a href="#" title="Tiêu điểm">Tiêu điểm</a></li>
+                                    <li><a href="#" title="Tin địa phương">Tin địa phương</a></li>
+                                    <li><a href="#" title="Hoạt động xã hội">Hoạt động xã hội</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-list">
+                                <a href="#" class="text-uppercase dropdown-category" title="Doanh nghiệp">Doanh
+                                    nghiệp</a>
+                                <ul class="header__menu-list-title">
+                                    <li><a href="#" title="Diễn đàn">Diễn đàn</a></li>
+                                    <li><a href="#" title="Thương hiệu">Thương hiệu</a></li>
+                                    <li><a href="#" title="Trách nhiệm xã hội">Trách nhiệm xã hội</a></li>
+                                    <li><a href="#" title="Thông tin thương hiệu">Thông tin thương hiệu</a></li>
+                                    <li><a href="#" title="Khởi nghiệp">Khởi nghiệp</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-list">
+                                <a href="#" class="text-uppercase dropdown-category" title="Tiếp thị">Tiếp thị</a>
+                                <ul class="header__menu-list-title">
+                                    <li><a href="#" title="Nhịp đập thị trường">Nhịp đập thị trường</a></li>
+                                    <li><a href="#" title="Tiếp thị số">Tiếp thị số</a></li>
+                                    <li><a href="#" title="Dịch vụ">Dịch vụ</a></li>
+                                    <li><a href="#" title="Bảo vệ người tiêu dùng">Bảo vệ ngườI tiêu dùng</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-list">
+                                <a href="#" class="text-uppercase dropdown-category" title="Kinh tế">Kinh tế</a>
+                                <ul class="header__menu-list-title">
+                                    <li><a href="#" title="Kinh doanh">Kinh doanh</a></li>
+                                    <li><a href="#" title="Tài chính - Đầu tư">Tài chính - Đầu tư</a></li>
+                                    <li><a href="#" title="Ngân hàng">Ngân hàng</a></li>
+                                    <li><a href="#" title="Bất động sản">Bất động sản</a></li>
+                                    <li><a href="#" title="Chứng khoán">Chứng khoán</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-list">
+                                <a href="#" class="text-uppercase dropdown-category" title="Xã hội">Xã hội</a>
+                                <ul class="header__menu-list-title">
+                                    <li><a href="#" title="Văn hoá">Văn hoá</a></li>
+                                    <li><a href="#" title="Giáo dục">Giáo dục</a></li>
+                                    <li><a href="#" title="Sức khoẻ">Sức khoẻ</a></li>
+                                    <li><a href="#" title="Du lịch">Du lịch</a></li>
+                                    <li><a href="#" title="Ẩm thực">Ẩm thực</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-list">
+                                <a href="#" class="text-uppercase dropdown-category" title="Pháp luật">Pháp luật</a>
+                                <ul class="header__menu-list-title">
+                                    <li><a href="#" title="Chính sách mới">Chính sách mới</a></li>
+                                    <li><a href="#" title="Tiếp thị & Pháp luật">Tiếp thị & Pháp luật</a></li>
+                                    <li><a href="#" title="Tư vấn">Tư vấn</a></li>
+                                    <li><a href="#" title="Luật sư của bạn">Luật sư của bạn</a></li>
+                                    <li><a href="#" title="Đơn thư bạn đọc">Đơn thư bạn đọc</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-list">
+                                <a href="#" class="text-uppercase dropdown-category" title="Quốc tế">Quốc tế</a>
+                                <ul class="header__menu-list-title">
+                                    <li><a href="#" title="Thế giới 24h">Thế giới 24h</a></li>
+                                    <li><a href="#" title="Tư liệu">Tư liệu</a></li>
+                                    <li><a href="#" title="Phân tích - Bình luận">Phân tích - Bình luận</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="header__option d-flex">
+                            <li><a href="#" class="header__option-a d-flex align-item-center text-uppercase"
+                                    title="Video">
+                                    <img src="../image/videoRed.png" class="header__option-img" alt="video">
+                                    <span>Video</span>
+                                </a></li>
+                            <li><a href="#" class="header__option-a d-flex align-item-center text-uppercase"
+                                    title="Ảnh">
+                                    <img src="../image/imageRed.png" class="header__option-img" alt="ảnh">
+                                    <span>Ảnh</span>
+                                </a></li>
+                            <li><a href="#" class="header__option-a d-flex align-item-center text-uppercase"
+                                    title="Infographic">
+                                    <img src="../image/bsnRed.png" class="header__option-img" alt="infographic">
+                                    <span>Infographic</span>
+                                </a></li>
+                            <li><a href="#" class="header__option-a d-flex align-item-center text-uppercase"
+                                    title="Emagazine">
+                                    <img src="../image/newsRed.png" class="header__option-img" alt="emagazine">
+                                    <span>Emagazine</span>
+                                </a></li>
+                            <li><a href="#" class="header__option-a d-flex align-item-center text-uppercase"
+                                    title="Tạp chí in">
+                                    <img src="../image/newsppRed.png" class="header__option-img" alt="Tạp chí in">
+                                    <span>Tạp chí in</span>
+                                </a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -62,7 +174,297 @@
     <!-- main -->
     <div class="main">
         <div class="container">
-            div.
+            <div class="main__marketing-news">
+                <div class="main__aside-layout d-flex">
+                    <div class="main__aside-layout-left">
+                        <div class="main__category-title-wrap d-flex">
+                            <h3>
+                                <a href="#" class="main__category-title-name text-uppercase" title="Doanh nghiệp">Doanh
+                                    nghiệp</a>
+                            </h3>
+                            <ul
+                                class="main__category-title-nav d-flex justify-content-between align-item-center text-uppercase">
+                                <li><a href="#" title="Diễn đàn">Diễn đàn</a></li>
+                                <li><a href="#" title="Thương mại">Thương mại</a></li>
+                                <li><a href="#" title="Thông tin doanh nghiệp">Thông tin doanh nghiệp</a></li>
+                                <li><a href="#" title="Trách nhiệm xã hội">Trách nhiệm xã hội</a></li>
+                                <li><a href="#" title="Khởi nghiệp">Khởi nghiệp</a></li>
+                            </ul>
+                        </div>
+                        <div class="main__aside-leftcorner d-flex">
+                            <div class="main__highlight-news">
+                                <a href="#" class="main__hl-news-img">
+                                    <img src="../image/hightlight-news.jpg"
+                                        alt="Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện &quot;bình thường mới&quot;">
+                                </a>
+                                <a href="#" class="main__news-category" title="Xã hội">
+                                    xã hội
+                                </a>
+                                <h2 class="main__hl-h2"><a href="#" class="main__highlight-news-title"
+                                        title="Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện &quot;bình thường mới&quot;">
+                                        Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện "bình
+                                        thường
+                                        mới"
+                                    </a></h2>
+                                <a href="#" class="main__news-content-des">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                    Covid-19 Hà
+                                    Nội triệu
+                                    tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan đến dịch Covid-19.
+                                    Cuộc họp đã
+                                    công bố xác nhận thêm</a>
+                            </div>
+                            <div class="main__news-left-rightcorner">
+                                <a href="#" class="main__news-rightcorner-1"
+                                    title="Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện &quot;bình thường mới&quot;">
+                                    <img src="../image/rightcorner.png" alt="">
+                                    Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện "bình
+                                    thường
+                                    mới"
+                                </a>
+                                <a href="#" class="main__news-rightcorner-2"
+                                    title="Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện &quot;bình thường mới&quot;">Hà
+                                    Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện "bình
+                                    thường
+                                    mới"</a>
+                                <a href="#" class="main__news-rightcorner-2"
+                                    title="Hà Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện &quot;bình thường mới&quot;">Hà
+                                    Nội thúc đẩy quan hệ thương mại đầu tư với Nhật Bản trong điều kiện "bình
+                                    thường
+                                    mới"</a>
+                            </div>
+                        </div>
+                        <ul class="main__dots-list">
+                            <li class="main__dots-list-item"></li>
+                            <li class="main__dots-list-item"></li>
+                            <li class="main__dots-list-item"></li>
+                            <li class="main__dots-list-item"></li>
+                            <li class="main__dots-list-item"></li>
+                        </ul>
+                        <!-- 10 tab nha -->
+                        <div class="main__news-listing">
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__news-item-img">
+                                    <a href="#"
+                                        title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                        <img src="../image/list1.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                    BĐS nào để sinh lời nhanh chóng?">
+                                    </a>
+                                </div>
+                                <div class="main__news-item-content">
+                                    <h3>
+                                        <a href="#" class="main__news-item-title"
+                                            title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                            Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?</a>
+                                    </h3>
+                                    <a href="#" class="main__news-category-list" title="Kinh tế">Kinh tế</a>
+                                    <p class="main__news-item-detail">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                        Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__news-item-img">
+                                    <a href="#"
+                                        title="Giảm 50% phí trước bạ ô tô: Xe sang có giá lăn bánh giảm &quot;khủng&quot;">
+                                        <img src="../image/list2.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                    BĐS nào để sinh lời nhanh chóng?">
+                                    </a>
+                                </div>
+                                <div class="main__news-item-content">
+                                    <h3>
+                                        <a href="#" class="main__news-item-title"
+                                            title="Giảm 50% phí trước bạ ô tô: Xe sang có giá lăn bánh giảm &quot;khủng&quot;">
+                                            <img src="../image/infographic1.png" alt="infographic">
+                                            Giảm 50% phí trước bạ ô tô: Xe sang có giá lăn bánh giảm "khủng"</a>
+                                    </h3>
+                                    <a href="#" class="main__news-category-list" title="Kinh tế">Kinh tế</a>
+                                    <p class="main__news-item-detail">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                        Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__news-item-img">
+                                    <a href="#"
+                                        title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                        <img src="../image/list3.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                    BĐS nào để sinh lời nhanh chóng?">
+                                    </a>
+                                </div>
+                                <div class="main__news-item-content">
+                                    <h3>
+                                        <a href="#" class="main__news-item-title"
+                                            title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                            Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?</a>
+                                    </h3>
+                                    <a href="#" class="main__news-category-list" title="Kinh tế">Kinh tế</a>
+                                    <p class="main__news-item-detail">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                        Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__news-item-img">
+                                    <a href="#"
+                                        title="Doanh nghiệp bất động sản ảnh hưởng ra sao bởi dịch Covid 19?">
+                                        <img src="../image/list4.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                    BĐS nào để sinh lời nhanh chóng?">
+                                    </a>
+                                </div>
+                                <div class="main__news-item-content">
+                                    <h3>
+                                        <a href="#" class="main__news-item-title"
+                                            title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                            Doanh nghiệp bất động sản ảnh hưởng ra sao bởi dịch Covid 19?</a>
+                                    </h3>
+                                    <a href="#" class="main__news-category-list" title="Doanh nghiệp">Doanh nghiệp</a>
+                                    <p class="main__news-item-detail">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                        Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__news-item-img">
+                                    <a href="#"
+                                        title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                        <img src="../image/list1.jpg" alt="Bắc Kạn: Doanh nghiệp đề xuất nhiều giải pháp vượt khó hậu COVID-19">
+                                    </a>
+                                </div>
+                                <div class="main__news-item-content">
+                                    <h3>
+                                        <a href="#" class="main__news-item-title"
+                                            title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                            Bắc Kạn: Doanh nghiệp đề xuất nhiều pháp vượt khó hậu COVID-19</a>
+                                    </h3>
+                                    <a href="#" class="main__news-category-list" title="Kinh tế">Kinh tế</a>
+                                    <p class="main__news-item-detail">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                        Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__news-item-img">
+                                    <a href="#"
+                                        title="Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp">
+                                        <img src="../image/list1.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                    BĐS nào để sinh lời nhanh chóng?">
+                                    </a>
+                                </div>
+                                <div class="main__news-item-content">
+                                    <h3>
+                                        <a href="#" class="main__news-item-title"
+                                            title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                            Quy hoạch băng tần cho hệ thống di động IMT… chưa phù hợp</a>
+                                    </h3>
+                                    <a href="#" class="main__news-category-list" title="Kinh tế">Kinh tế</a>
+                                    <p class="main__news-item-detail">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                        Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__news-item-img">
+                                    <a href="#"
+                                        title="Quảng Nam xây dựng chiến lược phát triển cho cây sâm Ngọc Linh và các dược liệu">
+                                        <img src="../image/list1.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                    BĐS nào để sinh lời nhanh chóng?">
+                                    </a>
+                                </div>
+                                <div class="main__news-item-content">
+                                    <h3>
+                                        <a href="#" class="main__news-item-title"
+                                            title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                            Quảng Nam xây dựng chiến lược phát triển cho cây sâm Ngọc Linh và các dược liệu</a>
+                                    </h3>
+                                    <a href="#" class="main__news-category-list" title="Kinh tế">Kinh tế</a>
+                                    <p class="main__news-item-detail">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                        Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__news-item-img">
+                                    <a href="#"
+                                        title="&quot;Lấy cung làm chủ đạo và đẩy mạnh cầu
+                                        của nền kinh tế&quot;: Hiểu sao cho đúng?">
+                                        <img src="../image/list2.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                    BĐS nào để sinh lời nhanh chóng?">
+                                    </a>
+                                </div>
+                                <div class="main__news-item-content">
+                                    <h3>
+                                        <a href="#" class="main__news-item-title"
+                                            title="Giảm 50% phí trước bạ ô tô: Xe sang có giá lăn bánh giảm &quot;khủng&quot;">
+                                            “Lấy cung làm chủ đạo và đẩy mạnh cầu của nền kinh tế”: Hiểu sao cho đúng?</a>
+                                    </h3>
+                                    <a href="#" class="main__news-category-list" title="Xã hội">Xã hội</a>
+                                    <p class="main__news-item-detail">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                        Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__news-item-img">
+                                    <a href="#"
+                                        title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                        <img src="../image/list3.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                    BĐS nào để sinh lời nhanh chóng?">
+                                    </a>
+                                </div>
+                                <div class="main__news-item-content">
+                                    <h3>
+                                        <a href="#" class="main__news-item-title"
+                                            title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                            Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                            BĐS nào để sinh lời nhanh chóng?</a>
+                                    </h3>
+                                    <a href="#" class="main__news-category-list" title="Kinh tế">Kinh tế</a>
+                                    <p class="main__news-item-detail">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                        Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__news-listing-item d-flex">
+                                <div class="main__news-item-img">
+                                    <a href="#"
+                                        title="Doanh nghiệp bất động sản ảnh hưởng ra sao bởi dịch Covid 19?">
+                                        <img src="../image/list4.jpg" alt="Có 1 tỷ đồng nên đầu tư vào phân khúc
+                                    BĐS nào để sinh lời nhanh chóng?">
+                                    </a>
+                                </div>
+                                <div class="main__news-item-content">
+                                    <h3>
+                                        <a href="#" class="main__news-item-title"
+                                            title="Có 1 tỷ đồng nên đầu tư vào phân khúc BĐS nào để sinh lời nhanh chóng?">
+                                            Doanh nghiệp bất động sản ảnh hưởng ra sao bởi dịch Covid 19?</a>
+                                    </h3>
+                                    <a href="#" class="main__news-category-list" title="Doanh nghiệp">Doanh nghiệp</a>
+                                    <p class="main__news-item-detail">Đêm ngày 6/3, Ban chỉ đạo phòng chống dịch
+                                        Covid-19
+                                        Hà Nội triệu tập cuộc họp khẩn cấp trong đêm để thông tin về sự việc liên quan
+                                        đến dịch Covid-19. Cuộc họp đã công bố xác nhận thêm</p>
+                                </div>
+                            </div>
+                            <div class="main__viewmore-wrap">
+                                <a href="#" class="main__viewmore-btn d-flex align-item-center" title="Xem thêm">Xem
+                                    thêm
+                                    &nbsp; <img src="../image/arrow_down.png" alt="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__aside-layout-right">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- footer -->
@@ -71,7 +473,7 @@
             <div class="main__navbar-menu d-flex text-uppercase">
                 <ul class="d-flex">
                     <li>
-                        <a href="#" class="main__navlink--active">
+                        <a href="index.html" class="main__navlink--active">
                             <span class="main__navbar--icon">
                                 <img src="../image/home.png" alt="home">
                             </span>
@@ -79,7 +481,7 @@
                         </a>
                     </li>
                     <li><a href="#">Sự kiện</a></li>
-                    <li><a href="#">Doanh nghiệp</a></li>
+                    <li><a href="business.html">Doanh nghiệp</a></li>
                     <li><a href="#">Tiếp thị</a></li>
                     <li><a href="#">Kinh tế</a></li>
                     <li><a href="#">Xã hội</a></li>
@@ -121,7 +523,8 @@
                         <b>Phó Tổng biên tập: </b>Trần Thị B
                     </p>
                     <p class="footer__contact-info">
-                        Chỉ được phát hành lại thông tin từ website này khi có sự đồng ý bằng văn bản của cơ quan chủ
+                        Chỉ được phát hành lại thông tin từ website này khi có sự đồng ý bằng văn bản của cơ quan
+                        chủ
                         quản.
                     </p>
                 </div>
@@ -129,4 +532,5 @@
         </div>
     </div>
 </body>
+
 </html>
