@@ -356,12 +356,13 @@ margin-left: 20px;
     font: 400 14px Roboto;
     line-height: 1.5;
 }
-.main__el-item-img{
-    margin-bottom: 8px;
+.main__el-item-img img{
+    display: block;
 }
 .main__el-item-title{
     color: #121212;
     font: 700 16px/22px Roboto;
+    margin-bottom: 11px;
 }
 .main__emagazine-left{
     width: 440px;
@@ -377,7 +378,7 @@ margin-left: 20px;
 }
 .main__emagazine-listing-item .main__el-img-emagazine{
     position: relative;
-    bottom: 33px;
+    bottom: 29px;
     left: 12px;
 }
 .main__emagazine-right{
@@ -455,7 +456,7 @@ hr{
 }
 .main__video-time{
     position: absolute;
-    font: 500 15px/17px Roboto;
+    font: 500 15px/17px SF;
     color: #fff;
     display: inline-block;
     padding: 3px 9px;
@@ -472,6 +473,8 @@ hr{
 }
 .main__video-title-icon{
     margin-left: 10px;
+    font: 700 22px/28px Noto;
+    color: #147ade;
 }
 .main__video-grid{
     width: 486px;
