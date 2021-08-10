@@ -8,6 +8,9 @@
     <meta name="keywords" content="báo điện tử, tin tức, luật pháp,">
     <meta name="description" content="">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
     <title>DT&TT</title>
 </head>
 
@@ -56,9 +59,111 @@
                         </div>
                     </div>
                     <div class="header__navbar-toggler">
-                        <a href="#"><img src="../image/toggler.png" alt="toggler" title="Danh mục"></a>
-                        
+                        <a href="#" title="Danh mục">
+                            <img src="../image/toggler.png" class="menu-toggler" alt="toggler">
+                            <img src="../image/x.png" class="menu-close" alt="close">
+                        </a>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu__dropdown">
+            <div class="container">
+                <div class="header__menu-dropdown">
+                    <ul class="header__menu-category d-flex justify-content-between">
+                        <li class="header__menu-list">
+                            <a href="#" class="text-uppercase dropdown-category" title="Sự kiện">Sự kiện</a>
+                            <ul class="header__menu-list-title">
+                                <li><a href="#" title="Chính trị - Xã hội">Chính trị - Xã hội</a></li>
+                                <li><a href="#" title="Cải cách hành chính">Cải cách hành chính</a></li>
+                                <li><a href="#" title="Tiêu điểm">Tiêu điểm</a></li>
+                                <li><a href="#" title="Tin địa phương">Tin địa phương</a></li>
+                                <li><a href="#" title="Hoạt động xã hội">Hoạt động xã hội</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-list">
+                            <a href="#" class="text-uppercase dropdown-category" title="Doanh nghiệp">Doanh nghiệp</a>
+                            <ul class="header__menu-list-title">
+                                <li><a href="#" title="Diễn đàn">Diễn đàn</a></li>
+                                <li><a href="#" title="Thương hiệu">Thương hiệu</a></li>
+                                <li><a href="#" title="Trách nhiệm xã hội">Trách nhiệm xã hội</a></li>
+                                <li><a href="#" title="Thông tin thương hiệu">Thông tin thương hiệu</a></li>
+                                <li><a href="#" title="Khởi nghiệp">Khởi nghiệp</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-list">
+                            <a href="#" class="text-uppercase dropdown-category" title="Tiếp thị">Tiếp thị</a>
+                            <ul class="header__menu-list-title">
+                                <li><a href="#" title="Nhịp đập thị trường">Nhịp đập thị trường</a></li>
+                                <li><a href="#" title="Tiếp thị số">Tiếp thị số</a></li>
+                                <li><a href="#" title="Dịch vụ">Dịch vụ</a></li>
+                                <li><a href="#" title="Bảo vệ người tiêu dùng">Bảo vệ ngườI tiêu dùng</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-list">
+                            <a href="#" class="text-uppercase dropdown-category" title="Kinh tế">Kinh tế</a>
+                            <ul class="header__menu-list-title">
+                                <li><a href="#" title="Kinh doanh">Kinh doanh</a></li>
+                                <li><a href="#" title="Tài chính - Đầu tư">Tài chính - Đầu tư</a></li>
+                                <li><a href="#" title="Ngân hàng">Ngân hàng</a></li>
+                                <li><a href="#" title="Bất động sản">Bất động sản</a></li>
+                                <li><a href="#" title="Chứng khoán">Chứng khoán</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-list">
+                            <a href="#" class="text-uppercase dropdown-category" title="Xã hội">Xã hội</a>
+                            <ul class="header__menu-list-title">
+                                <li><a href="#" title="Văn hoá">Văn hoá</a></li>
+                                <li><a href="#" title="Giáo dục">Giáo dục</a></li>
+                                <li><a href="#" title="Sức khoẻ">Sức khoẻ</a></li>
+                                <li><a href="#" title="Du lịch">Du lịch</a></li>
+                                <li><a href="#" title="Ẩm thực">Ẩm thực</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-list">
+                            <a href="#" class="text-uppercase dropdown-category" title="Pháp luật">Pháp luật</a>
+                            <ul class="header__menu-list-title">
+                                <li><a href="#" title="Chính sách mới">Chính sách mới</a></li>
+                                <li><a href="#" title="Tiếp thị & Pháp luật">Tiếp thị & Pháp luật</a></li>
+                                <li><a href="#" title="Tư vấn">Tư vấn</a></li>
+                                <li><a href="#" title="Luật sư của bạn">Luật sư của bạn</a></li>
+                                <li><a href="#" title="Đơn thư bạn đọc">Đơn thư bạn đọc</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-list">
+                            <a href="#" class="text-uppercase dropdown-category" title="Quốc tế">Quốc tế</a>
+                            <ul class="header__menu-list-title">
+                                <li><a href="#" title="Thế giới 24h">Thế giới 24h</a></li>
+                                <li><a href="#" title="Tư liệu">Tư liệu</a></li>
+                                <li><a href="#" title="Phân tích - Bình luận">Phân tích - Bình luận</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="header__option d-flex">
+                        <li><a href="#" class="header__option-a d-flex align-item-center text-uppercase" title="Video">
+                                <img src="../image/videoRed.png" class="header__option-img" alt="video">
+                                <span>Video</span>
+                            </a></li>
+                        <li><a href="#" class="header__option-a d-flex align-item-center text-uppercase" title="Ảnh">
+                                <img src="../image/imageRed.png" class="header__option-img" alt="ảnh">
+                                <span>Ảnh</span>
+                            </a></li>
+                        <li><a href="#" class="header__option-a d-flex align-item-center text-uppercase"
+                                title="Infographic">
+                                <img src="../image/bsnRed.png" class="header__option-img" alt="infographic">
+                                <span>Infographic</span>
+                            </a></li>
+                        <li><a href="#" class="header__option-a d-flex align-item-center text-uppercase"
+                                title="Emagazine">
+                                <img src="../image/newsRed.png" class="header__option-img" alt="emagazine">
+                                <span>Emagazine</span>
+                            </a></li>
+                        <li><a href="#" class="header__option-a d-flex align-item-center text-uppercase"
+                                title="Tạp chí in">
+                                <img src="../image/newsppRed.png" class="header__option-img" alt="Tạp chí in">
+                                <span>Tạp chí in</span>
+                            </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
