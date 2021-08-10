@@ -212,6 +212,9 @@ a{
 .color-darkgrey{
     color: #454545;
 }
+.color-grey{
+    color: #e6e6e6;
+}
 .main__hc-news-title{
     font: 700 16px/20px Roboto;
     color: #121212;
@@ -274,15 +277,21 @@ a{
     width: 710px;
 }
 .main__aside-layout-right{
-    padding-top: 18px;
+    margin-top: 18px;
     width: 300px;
     margin-left: 30px;
+    background-color: #e6e6e6;
+}
+.main__aside-right-empty{
+    background-color: white;
+    padding-top: 30px;
 }
 .main__aside-stonks{
     border: 1px solid #e6e6e6;
     border-radius: 3px;
     font: 500 15px/19px Roboto;
     padding: 15px 15px 0px 15px;
+    background-color: white;
 }
 .main__col1-title{
     font: 500 16px/22px Roboto;
@@ -545,14 +554,10 @@ hr{
     margin-bottom: 2px;
     font: 400 13px/24px Roboto;
 }
-.main__aside-right-empty{
-    background-color: #e6e6e6;
-    margin-top: 30px;
+.main__al-right-bottom{
     width: 29%;
-}
-.main__ar-empty-bottom{
     background-color: #e6e6e6;
-    width: 29%;
+    margin-left: 30px;
 }
 .main__title-icon{
     margin-right: 8px;
