@@ -308,11 +308,12 @@ strong{
 }
 .img-circle{
     position: relative;
+    vertical-align: text-bottom;
 }
 .img-facebook{
     position: absolute;
     margin-left: -14px;
-    margin-top: 3px;
+    margin-top: 6px;
 }
 .main__news-suggest{
     border-bottom: 1px dotted #454545;
