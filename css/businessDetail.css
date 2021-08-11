@@ -327,9 +327,6 @@ strong{
     margin: auto;
     display: table;
 }
-.button-title>img{
-    display: block;
-}
 .img-circle{
     position: relative;
 }
