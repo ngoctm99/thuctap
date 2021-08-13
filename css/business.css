@@ -89,6 +89,9 @@ a{
     margin-left: 12px;
     font-weight: 600;
 }
+.header__top li img{
+    vertical-align: middle;
+}
 .align-item-center{
     align-items: center;
 }
@@ -101,6 +104,9 @@ a{
 }
 .header__navbar-toggler {
     position: relative;
+}
+.menu-toggler{
+    display: block;
 }
 .menu-close{
     display: none;
