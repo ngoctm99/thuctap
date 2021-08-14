@@ -19,6 +19,18 @@ body{
     font-style: normal;
 }
 @font-face {
+    font-family: 'RobotoBold';
+    src: url('../font/Roboto/Roboto-Bold.eot');
+    src: url('../font/Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Roboto/Roboto-Bold.woff2') format('woff2'),
+        url('../font/Roboto/Roboto-Bold.woff') format('woff'),
+        url('../font/Roboto/Roboto-Bold.ttf') format('truetype'),
+        url('../font/Roboto/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Noto';
     src: url('../font/Noto_Serif/NotoSerif-Bold.eot');
     src: url('../font/Noto_Serif/NotoSerif-Bold.eot?#iefix') format('embedded-opentype'),
@@ -51,6 +63,18 @@ body{
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'SFBold';
+    src: url('../font/SF_Pro/SFProDisplay-Semibold.eot');
+    src: url('../font/SF_Pro/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../font/SF_Pro/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../font/SF_Pro/SFProDisplay-Semibold.woff') format('woff'),
+        url('../font/SF_Pro/SFProDisplay-Semibold.ttf') format('truetype'),
+        url('../font/SF_Pro/SFProDisplay-Semibold.svg#SFProDisplay-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 .container{
     margin: 0 auto;
     width: 1040px;
@@ -78,6 +102,9 @@ a{
     font: 500 14px/19px Roboto;
     display: block;
 }
+b{
+    font-family: 'RobotoBold';
+}
 .header__tags{
     margin-right: 43px;
 }
@@ -87,10 +114,7 @@ a{
     border-radius: 16px;
     color: #454545;
     margin-left: 12px;
-    font-weight: 600;
-}
-.header__top li img{
-    vertical-align: middle;
+    font: 500 14px/19px RobotoBold;
 }
 .align-item-center{
     align-items: center;
@@ -168,9 +192,7 @@ a{
 .main__navbar-menu a{
     padding: 10px 0px;
     color: #e6e6e6;
-    display: block;
-    padding: 10px 12px;
-    line-height: 19px;
+    padding: 9px 12px;
 }
 .main__navbar-menu a:hover{
     color: white;
@@ -180,14 +202,8 @@ a{
     background-color: #0b4888;
     color: white;
 }
-.main__navlink{
-    color: white;
-}
-.main__navlink, .main__navlink--active{
-    padding: 10px 12px;
-}
 .main__navbar-home{
-    margin-left: 8px;
+    margin-left: 5px;
 }
 .main__top-news{
     padding: 24px 0px 34px 0px;
@@ -205,7 +221,7 @@ a{
     margin-bottom: 7px;
 }
 .main__news-category, .main__news-category-list{
-    font: 700 11px/16px Roboto;
+    font: 500 11px/16px RobotoBold;
     letter-spacing: calc(11px * 0.03);
     color: #147ade;
     text-transform: uppercase;
@@ -223,7 +239,7 @@ a{
     color: #e6e6e6;
 }
 .main__hc-news-title{
-    font: 700 16px/20px Roboto;
+    font: 500 16px/20px RobotoBold;
     color: #121212;
 }
 .main__news-img-infographic{
@@ -260,7 +276,7 @@ a{
     margin-bottom: 12px;
 }
 .main__hna-title{
-    font: 700 19px/26px Roboto;
+    font: 500 19px/26px RobotoBold;
     color: #121212;
 } 
 .main__hna-content{
@@ -343,7 +359,7 @@ a{
     margin-bottom: 24px;
 }
 .main__col-item-title{
-    font: 700 16px/22px Roboto;
+    font: 500 16px/22px RobotoBold;
     color: #121212;
 }
 .main__col-item-img{
@@ -351,15 +367,26 @@ a{
     display: block;
 }
 .vertical-align-middle{
+    vertical-align: middle;
+}
+.vertical-align-top{
     vertical-align: text-top;
 }
-.main__category-title-nav li:not(:last-child) a{
+.main__category-title-nav li:nth-child(-n+2) a{
     border-right: 1px solid #e6e6e6;
 }
-.main__category-title-nav li a{
+.main__category-title-nav li:nth-child(-n+3) a{
+    padding: 0px 7px 0px 11px;
+    color: #454545;
+    font: 400 11px/16px Roboto;
+}
+.main__category-title-marketing li a{
     padding: 0px 12px;
     color: #454545;
     font: 400 11px/16px Roboto;
+}
+.main__category-title-marketing li:not(:last-child) a{
+    border-right: 1px solid #e6e6e6;
 }
 .main__category-title-wrap{
     padding: 12px 0px;
@@ -369,7 +396,7 @@ a{
     margin: 0;
 }
 .main__category-title-name{
-    font: 700 18px/25px Roboto;
+    font: 500 18px/25px RobotoBold;
     color: #147ade;
 }
 .main__news-listing-item{
@@ -380,7 +407,7 @@ a{
 margin-left: 20px;
 }
 .main__news-item-title{
-    font: 700 22px/28px Roboto;
+    font: 500 22px/28px RobotoBold;
     color: #121212;
 }
 .main__news-item-detail{
@@ -392,7 +419,7 @@ margin-left: 20px;
 }
 .main__el-item-title{
     color: #121212;
-    font: 700 16px/22px Roboto;
+    font: 500 16px/22px RobotoBold;
     margin-bottom: 11px;
 }
 .main__emagazine{
@@ -436,7 +463,7 @@ margin-left: 20px;
 .main__mr-item-no{
     width: 19px;
     color: #147ade;
-    font: 600 14px Roboto
+    font: 400 14px RobotoBold;
 }
 .main__mr-item-title{
     margin-left: 6px;
@@ -465,7 +492,7 @@ hr{
     border-top: 2px solid #147ade;
 }
 .main__video-title{
-    font: 700 22px/28px Roboto;
+    font: 500 22px/28px RobotoBold;
     color: #121212;
     margin-bottom: 21px;
 }
@@ -499,12 +526,12 @@ hr{
     background-color: #121212;
 }
 .main__highlight-video .main__video-time{
-    bottom: 145px;
+    bottom: 115px;
     right: 15px;
 }
 .main__video-item .main__video-time{
     font: 500 14px/17px SF;
-    bottom: 75px;
+    bottom: 85px;
     right: 12px;
 }
 .main__video-title-icon{
@@ -519,7 +546,7 @@ hr{
     filter: brightness(70%);
 }
 .main__video-item .main__video-title{
-    font: 700 16px/22px Roboto;
+    font: 500 16px/22px RobotoBold;
 }
 .main__col-2{
     width: 492px;
@@ -543,19 +570,20 @@ hr{
     margin-bottom: 12px;
 }
 .main__col-title{
-    font: 700 16px/22px Roboto;
+    font: 500 16px/22px RobotoBold;
     color: #121212;
 }
 .main__mr-news-item-title{
     color: #121212;
-    font-weight: 600;
+    font: 500 14px/19px RobotoBold;
 }
 .footer, .footer a{
     background-color: #095aaa;
     color: white;
 }
 .footer__main-flex{
-    padding: 30px 0;
+    padding: 30px 0px;
+    color: #e6e6e6;
 }
 .footer__logo{
     width: 180px;
@@ -572,6 +600,7 @@ hr{
 .footer__contact-info{
     margin-bottom: 2px;
     font: 400 13px/24px Roboto;
+    color: #e6e6e6;
 }
 .main__al-right-bottom{
     width: 29%;
