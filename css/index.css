@@ -112,11 +112,16 @@ li{
 a{
     text-decoration: none;
     font: 500 14px/19px Roboto;
+}
+.header__navbar a{
     display: block;
 }
 b{
     font-family: 'RobotoBold';
 }
+/* img{
+    display: block;
+} */
 .header__tags{
     margin-right: 43px;
 }
