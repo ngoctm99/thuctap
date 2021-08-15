@@ -31,6 +31,18 @@ body{
     font-display: swap;
 }
 @font-face {
+    font-family: 'RobotoMedium';
+    src: url('../font/Roboto/Roboto-Medium.eot');
+    src: url('../font/Roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/Roboto/Roboto-Medium.woff2') format('woff2'),
+        url('../font/Roboto/Roboto-Medium.woff') format('woff'),
+        url('../font/Roboto/Roboto-Medium.ttf') format('truetype'),
+        url('../font/Roboto/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Noto';
     src: url('../font/Noto_Serif/NotoSerif-Bold.eot');
     src: url('../font/Noto_Serif/NotoSerif-Bold.eot?#iefix') format('embedded-opentype'),
@@ -40,6 +52,18 @@ body{
          url('../font/Noto_Serif/NotoSerif-Bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'NotoMedium';
+    src: url('../font/Noto_Serif/NotoSerif-Medium.eot');
+    src: url('../font/Noto_Serif/NotoSerif-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/Noto_Serif/NotoSerif-Medium.woff2') format('woff2'),
+        url('../font/Noto_Serif/NotoSerif-Medium.woff') format('woff'),
+        url('../font/Noto_Serif/NotoSerif-Medium.ttf') format('truetype'),
+        url('../font/Noto_Serif/NotoSerif-Medium.svg#NotoSerif-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Noto-Regular';
@@ -126,7 +150,7 @@ b{
     border-radius: 16px;
     color: #454545;
     margin-left: 12px;
-    font: 500 14px/19px RobotoBold;
+    font: 500 14px/19px RobotoMedium;
 }
 .vertical-align-middle{
     vertical-align: middle;
@@ -143,6 +167,10 @@ b{
 }
 .header__navbar-toggler {
     position: relative;
+}
+.header__navbar-ul img{
+    vertical-align: text-top;
+    margin-right: 3px;
 }
 .menu-toggler{
     display: block;
@@ -282,7 +310,7 @@ b{
     margin-bottom: 13px;
 }
 .main__highlight-news-title{
-    font: 700 28px/32px Noto;
+    font: 700 26px/32px Noto;
     color: #121212;
 }
 .main__news-info{
@@ -367,9 +395,9 @@ strong{
     padding: 15px 0px;
 }
 .main__news-detail-content{
-    font: 500 17px/22px Noto-Regular;
-    line-height: 2;
-    padding: 10px 0px 15px 0px;
+    font: 500 17px/22px NotoMedium;
+    line-height: 1.8;
+    padding: 10px 0px 16px 0px;
 }
 .main__news-author{
     font: 500 16px/18px RobotoBold;

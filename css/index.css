@@ -31,6 +31,18 @@ body{
     font-display: swap;
 }
 @font-face {
+    font-family: 'RobotoMedium';
+    src: url('../font/Roboto/Roboto-Medium.eot');
+    src: url('../font/Roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/Roboto/Roboto-Medium.woff2') format('woff2'),
+        url('../font/Roboto/Roboto-Medium.woff') format('woff'),
+        url('../font/Roboto/Roboto-Medium.ttf') format('truetype'),
+        url('../font/Roboto/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Noto';
     src: url('../font/Noto_Serif/NotoSerif-Bold.eot');
     src: url('../font/Noto_Serif/NotoSerif-Bold.eot?#iefix') format('embedded-opentype'),
@@ -114,7 +126,7 @@ b{
     border-radius: 16px;
     color: #454545;
     margin-left: 12px;
-    font: 500 14px/19px RobotoBold;
+    font: 500 14px/19px RobotoMedium;
 }
 .align-item-center{
     align-items: center;
@@ -128,6 +140,10 @@ b{
 }
 .header__navbar-toggler {
     position: relative;
+}
+.header__navbar-ul img{
+    vertical-align: text-top;
+    margin-right: 3px;
 }
 .menu-toggler{
     display: block;
@@ -532,7 +548,7 @@ hr{
 .main__video-item .main__video-time{
     font: 500 14px/17px SF;
     bottom: 85px;
-    right: 12px;
+    right: 15px;
 }
 .main__video-title-icon{
     margin-left: 6px;
