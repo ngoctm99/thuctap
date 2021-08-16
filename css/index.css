@@ -146,9 +146,6 @@ b{
 .header__navbar-toggler {
     position: relative;
 }
-.header__navbar-ul li a{
-    font: 500 14px/19px RobotoMedium;
-}
 .header__navbar-ul img{
     vertical-align: text-top;
     margin-right: 3px;

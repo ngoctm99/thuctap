@@ -143,9 +143,6 @@ b{
     background-color: #095aaa;
     color: #e6e6e6;
 }
-.header__navbar-ul li a{
-    font: 500 14px/19px RobotoMedium;
-}
 .header__navbar-toggler {
     position: relative;
 }
