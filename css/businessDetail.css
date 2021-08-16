@@ -167,6 +167,9 @@ b{
     background-color: #095aaa;
     color: #e6e6e6;
 }
+.header__navbar-ul li a{
+    font: 500 14px/19px RobotoMedium;
+}
 .header__navbar-toggler {
     position: relative;
 }
@@ -235,10 +238,9 @@ b{
     margin-right: 8px;
 }
 .main__navbar-menu a{
-    padding: 10px 0px;
     color: #e6e6e6;
     display: inline-block;
-    padding: 10px 12px;
+    padding: 9px 12px;
 }
 .main__navbar-menu a:hover{
     color: white;
