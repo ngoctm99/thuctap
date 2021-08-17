@@ -346,6 +346,9 @@ b{
 .btn-share{
     width: 90px;
 }
+.justify-content-center{
+    justify-content: center;
+}
 .main__news-social-button2{
     background-color: #1878f3;
     margin-left: 10px;
@@ -452,25 +455,26 @@ strong{
     border-left: 1px solid #e6e6e6;
 }
 .social-icon-img{
-    margin-right: 4px;
+    margin-right: 15px;
 }
 .ellipse{
     position: relative;
+    display: block;
 }
 .ellipse-twitter{
     position: absolute;
-    margin-left: -19px;
-    margin-top: 6px;
+    margin-left: 6px;
+    margin-top: -16px;
 }
 .ellipse-zingme{
     position: absolute;
-    margin-left: -18.5px;
-    margin-top: 7px;
+    margin-left: 7.4px;
+    margin-top: -15.5px;
 }
 .ellipse-gmail{
     position: absolute;
-    margin-left: -17px;
-    margin-top: 7px;
+    margin-left: 5px;
+    margin-top: -15px;
 }
 .social-bottom{
     background-color: #f9f9f9;
