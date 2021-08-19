@@ -546,12 +546,12 @@ hr{
     background-color: #121212;
 }
 .main__highlight-video .main__video-time{
-    bottom: 115px;
+    bottom: 80px;
     right: 15px;
 }
 .main__video-item .main__video-time{
     font: 500 14px/17px SF;
-    bottom: 85px;
+    bottom: 65px;
     right: 15px;
 }
 .main__video-title-icon{
