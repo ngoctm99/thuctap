@@ -157,6 +157,9 @@ b{
 .vertical-align-middle{
     vertical-align: middle;
 }
+.vertical-align-top{
+    vertical-align: text-top;
+}
 .align-item-center{
     align-items: center;
 }
@@ -176,9 +179,6 @@ b{
 }
 .menu-toggler{
     display: block;
-}
-.menu-close{
-    display: none;
 }
 .menu-toggler.is-disabled{
     display: none;
@@ -357,6 +357,9 @@ b{
     height: 20px;
 }
 .m-right{
+    margin-right: 5px;
+}
+.m-right-home{
     margin-right: 3px;
 }
 .main__keyword{
@@ -573,4 +576,248 @@ hr{
 .footer__contact-info{
     margin-bottom: 2px;
     font: 400 13px/24px Roboto;
+}
+.sprite {
+    background-image: url("../image/spritesheet.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-3dots {
+    width: 24px;
+    height: 11px;
+    background-position: -5px -5px;
+}
+
+.sprite-Ellipse5 {
+    width: 14px;
+    height: 14px;
+    background-position: -39px -5px;
+}
+
+.sprite-arrow_down {
+    width: 10px;
+    height: 6px;
+    background-position: -63px -5px;
+}
+
+.sprite-bsnBlack {
+    width: 16px;
+    height: 16px;
+    background-position: -83px -5px;
+}
+
+.sprite-bsnRed {
+    width: 16px;
+    height: 16px;
+    background-position: -109px -5px;
+}
+
+.sprite-business {
+    width: 18px;
+    height: 18px;
+    background-position: -135px -5px;
+}
+
+.sprite-checklist {
+    width: 18px;
+    height: 18px;
+    background-position: -163px -5px;
+}
+
+.sprite-clock {
+    width: 15px;
+    height: 15px;
+    background-position: -191px -5px;
+}
+
+.sprite-clockcircle {
+    width: 15px;
+    height: 15px;
+    background-position: -216px -5px;
+}
+
+.sprite-clockwise {
+    width: 4px;
+    height: 9px;
+    background-position: -5px -30px;
+}
+
+.sprite-dot {
+    width: 4px;
+    height: 4px;
+    background-position: -19px -30px;
+}
+
+.sprite-eMagazine {
+    width: 94px;
+    height: 18px;
+    background-position: -33px -33px;
+}
+
+.sprite-economy {
+    width: 20px;
+    height: 20px;
+    background-position: -191px -30px;
+}
+
+.sprite-ellipse {
+    width: 22px;
+    height: 22px;
+    background-position: -137px -60px;
+    display: block;
+}
+
+.sprite-facebook {
+    width: 9px;
+    height: 9px;
+    background-position: -221px -30px;
+}
+
+.sprite-ffb {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -60px;
+}
+
+.sprite-footer_logo {
+    width: 143px;
+    height: 32px;
+    background-position: -5px -92px;
+}
+
+.sprite-global {
+    width: 20px;
+    height: 20px;
+    background-position: -169px -60px;
+}
+
+.sprite-gmail {
+    width: 12px;
+    height: 9px;
+    background-position: -221px -49px;
+}
+
+.sprite-header_logo {
+    width: 188px;
+    height: 42px;
+    background-position: -5px -134px;
+}
+
+.sprite-home {
+    width: 19px;
+    height: 15px;
+    background-position: -199px -68px;
+}
+
+.sprite-imageRed {
+    width: 16px;
+    height: 16px;
+    background-position: -158px -93px;
+}
+
+.sprite-infographic1 {
+    width: 16px;
+    height: 16px;
+    background-position: -184px -93px;
+}
+
+.sprite-infographic2 {
+    width: 16px;
+    height: 16px;
+    background-position: -210px -93px;
+}
+
+.sprite-law {
+    width: 20px;
+    height: 20px;
+    background-position: -203px -119px;
+}
+
+.sprite-like {
+    width: 13px;
+    height: 11px;
+    background-position: -30px -68px;
+}
+
+.sprite-newsRed {
+    width: 18px;
+    height: 18px;
+    background-position: -203px -149px;
+}
+
+.sprite-newsppRed {
+    width: 18px;
+    height: 18px;
+    background-position: -203px -177px;
+}
+
+.sprite-playBig {
+    width: 96px;
+    height: 96px;
+    background-position: -243px -5px;
+}
+
+.sprite-playSmall {
+    width: 56px;
+    height: 56px;
+    background-position: -236px -111px;
+}
+
+.sprite-search {
+    width: 16px;
+    height: 15px;
+    background-position: -302px -111px;
+}
+
+.sprite-social {
+    width: 20px;
+    height: 20px;
+    background-position: -302px -136px;
+}
+
+.sprite-toggler {
+    width: 18px;
+    height: 14px;
+    background-position: -302px -166px;
+}
+
+.sprite-twitter {
+    width: 10px;
+    height: 10px;
+    background-position: -328px -111px;
+}
+
+.sprite-vector {
+    width: 10px;
+    height: 15px;
+    background-position: -330px -166px;
+}
+
+.sprite-video {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -191px;
+}
+
+.sprite-videoRed {
+    width: 16px;
+    height: 16px;
+    background-position: -39px -190px;
+}
+
+.sprite-x {
+    width: 20px;
+    height: 20px;
+    background-position: -65px -191px;
+}
+
+.sprite-zingme {
+    width: 8px;
+    height: 9px;
+    background-position: -332px -131px;
+}
+
+.menu-close{
+    display: none;
 }
