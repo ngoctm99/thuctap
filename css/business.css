@@ -316,14 +316,16 @@ b{
 .color-red{
     color: #f35a57;
 }
-.main__category-title-nav li:not(:last-child) a{
+.main__category-title-nav li:not(:last-child){
     border-right: 1px solid #e6e6e6;
     padding-right: 12px;
 }
-.main__category-title-nav li a{
+.main__category-title-nav li{
     padding-left: 12px;
-    color: #454545;
+}
+.main__category-title-nav li a{    
     font: 500 11px/16px RobotoMedium;
+    color: #454545;
 }
 .main__category-title-wrap{
     padding: 12px 0px;
