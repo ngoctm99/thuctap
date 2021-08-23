@@ -494,7 +494,7 @@ b{
     width: 270px;
 }
 .main__mr-news-item{
-    padding: 16px 0px 16px 0px;
+    padding: 15px 0px 15px 0px;
     border-bottom: 1px solid #e6e6e6;   
 }
 .main__category-list-news-item .main__mr-news-item:first-child{
@@ -615,6 +615,9 @@ hr{
 }
 .main__category-list-news-item{
     border-top: 2px solid #147ADE;
+}
+.main__category-list-news-item:not(:last-child){
+    margin-bottom: 15px;
 }
 .main__category-list-news{
     padding-bottom: 30px;
