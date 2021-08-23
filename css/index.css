@@ -594,6 +594,13 @@ hr{
 }
 .main__video-img{
     filter: brightness(70%);
+    display: block;
+}
+.main__highlight-video .main__video-img{
+    margin-bottom: 11px;
+}
+.main__video-grid .main__video-img{
+    margin-bottom: 5px;
 }
 .main__video-item .main__video-title{
     font: 500 16px/22px RobotoBold;
