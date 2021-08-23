@@ -239,7 +239,7 @@ b{
     margin-bottom: 7px;
 }
 .main__news-category, .main__news-category-list{
-    font: 500 11px/16px RobotoBold;
+    font: 500 11px/16px RobotoMedium;
     letter-spacing: calc(11px * 0.03);
     color: #147ade;
     text-transform: uppercase;
@@ -635,7 +635,7 @@ hr{
 }
 .main__mr-news-item-title{
     color: #121212;
-    font: 500 14px/19px RobotoBold;
+    font: 500 14px/19px RobotoMedium;
 }
 .footer, .footer a{
     background-color: #095aaa;

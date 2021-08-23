@@ -273,7 +273,7 @@ b{
     line-height: 3;
 }
 .main__news-category-title{
-    font: 500 11px/16px RobotoBold;    
+    font: 500 11px/16px RobotoMedium;    
     color: #147ade;
     margin-right: 12px;
 }
@@ -282,8 +282,8 @@ b{
 }
 .img-clock-2{
     position: absolute;
-    margin-left: -8px;
-    margin-top: 2.7px;
+    margin-left: -8.3px;
+    margin-top: 2.4px;
 }
 .main__highlight-news{
     width: 467px;
@@ -327,8 +327,7 @@ b{
     margin-bottom: 14px;
 }
 .main__news-brief{
-    font: 500 19px RobotoBold;
-    letter-spacing: 0.3px;
+    font: 500 19px RobotoMedium;
     line-height: 1.4;
 }
 .main__news-social{
@@ -367,13 +366,13 @@ b{
     padding: 2px 0px 27px 0px;
 }
 strong{
-    font: 500 14px RobotoBold;
+    font: 500 14px RobotoMedium;
     margin-right: 5px;
     color: black;
 }
 .main__keyword-list>a{
-    color: #555555;
-    font: 500 14px RobotoBold;
+    color: #121212;
+    font: 500 14px RobotoMedium;
 }
 .button-title{
     font: 600 13px SFBold;
