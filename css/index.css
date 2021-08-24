@@ -507,9 +507,9 @@ b{
     border-bottom: none;
 }   
 .main__mr-item-no{
-    width: 19px;
+    width: 12px;
     color: #147ade;
-    font: 500 14px RobotoBold;
+    font: 500 14px RobotoMedium;
 }
 .main__mr-item-img img{
     display: block;
@@ -518,7 +518,7 @@ b{
     margin-left: 6px;
     width: calc(100% - 80px);
     color: #121212;
-    font: 500 14px RobotoBold;
+    font: 500 14px RobotoMedium;
 }
 .main__viewmore-btn{
     width: 107px;
